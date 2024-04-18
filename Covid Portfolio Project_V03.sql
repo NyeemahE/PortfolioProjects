@@ -182,7 +182,6 @@ where continent is not null
 group by continent
 order by total_vacc desc;
 
--- Total vaccinations by country 
 create view total_vacc_bycountry as
 SELECT location, SUM(total_vaccinations) as total_vacc
 FROM portfolioproject.covidvaccinations_02
