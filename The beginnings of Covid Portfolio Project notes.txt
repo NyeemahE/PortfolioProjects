@@ -1,0 +1,50 @@
+﻿Nyeemah Elliott 
+
+
+The beginnings of Covid Portfolio Project 
+
+
+This is an analysis of some of the data from the beginning of the Covid epidemic (January 2020- March 2021).  Often people wondered just how many people were being infected or could possibly become infected, as well as the likelihood of death from this unfortunate contagious virus. How many people have died and what countries have the safest populations in regards to this contagion. 
+Sourcing Raw data and Cleaning 
+
+
+
+
+* Data sourced from OurWorldinData.org/covid-deaths 
+* Statistics and research based on Coronavirus Deaths, conducted by Hannah Ritchie, Etseban Ortiz-Ospina, Diana Beltekian, Edouard Mathieu, Joe Jasell, Bobbie Macdonald, Charlie Giattino, Cameron Appel and MAx Roser.
+* Data used for my analysis: CovidDeaths.xlsx - AlexTheAnalyst/PortfolioProjects · GitHub
+
+
+Data cleaning steps for analysis: 
+
+
+* Opened “covid deaths” in Excel, cut and paste the “population” column to be after the “date” column to make queries easier to write for the future.
+* Deleted all the columns to the right from column AA (ctrl- shift- right arrow key) as this data is not needed.
+* Used F5 key to highlight all blank cells and replace them with “NULL”
+* Formatted “Date” column to “YYYY-MM-DD” for easier queries. 
+* Saved the clean data as “CovidDeaths_02” in a CSV file format for analysis
+* Re-open a copy of the original (unchanged) covid deaths file in Excel 
+* Delete rows E-Z for vaccination data only.
+* Used F5 key to highlight blank cells and replace with “NULL”
+* Format “Date” column to “YYYY-MM-DD” 
+* Saved the clean data as “CovidVaccinations_02” in a CSV file format. 
+* Imported saved files into MySQL workbench for analysis.
+
+
+Analysis
+
+
+* The Queries I created to explore and analyze the data can be found in the “Covid Portfolio Project_V04” file on my GitHub. 
+
+
+
+
+Formatting for visualization
+
+
+* I planned to use Tableau Public for my data visualization. A paid upgrade is required to directly import SQL file types, so I needed to save the information from my query outputs as Excel files to import them into Tableau Public.
+* There are four specific queries I wanted to use for visualization and they can be found under the SQL views that I created at the end of my  “Covid Portfolio Project_V04” file.
+* I saved the output table from each view separately as CSV files.
+* I imported the CSVs into Excel and formatted them for use in Tableau. Specifically making sure the dates were in the correct format and replacing all the “NULL” values with zero. 
+* I imported the Excel files into Tableau and created my visuals.
+* The dashboard can be viewed here: https://public.tableau.com/app/profile/nyeemah.e/viz/TheBeginningsofCovid2020-2021/Dashboard1
